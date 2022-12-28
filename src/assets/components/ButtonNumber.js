@@ -1,35 +1,31 @@
 import React from 'react';
 import styles from "../css/main.module.css";
 
-const ButtonNumber = ({ numButton , setNum, value, num}) => {
+const ButtonNumber = ({ numButton , setNum, value, num, btnOpp}) => {
     function handleClick() {
         setNum(num + value);
     }
 
-    function clearResult() {
-        setNum("");
-    }
-
     return (
-        <div>
+        <>
             {
-                (value === "AC") ? (
+                (value === "0") ? (
                     <button
-                        onClick={clearResult}
-                        className={styles.btnAC}
+                        className={`${styles.btnZero} ${btnOpp}`}
+                        onClick={handleClick}
                     >
                         {numButton}
                     </button>
                 ) : (
                     <button
-                        className={`${styles.btnNumber}`}
+                        className={`${styles.btnNumber} ${btnOpp}`}
                         onClick={handleClick}
                     >
                         {numButton}
                     </button>
                 )
             }
-        </div>
+        </>
     );
 };
 

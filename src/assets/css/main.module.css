@@ -54,14 +54,6 @@ body {
     margin-bottom: .875rem;
 }
 
-.btnZero {
-    padding: 0.313rem 2.05rem;
-    background: #72777D;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-}
-
 .btnAC {
     padding: 0.313rem 3.1rem;
     background: #72777D;
@@ -70,8 +62,8 @@ body {
     border: none;
 }
 
-.btnDot {
-    padding: 0.313rem 0.725rem;
+.btnZero {
+    padding: 0.313rem 2.05rem;
     background: #72777D;
     color: #fff;
     border-radius: 5px;
@@ -79,7 +71,7 @@ body {
 }
 
 .btnNumber {
-    padding: 0.313rem 0.625rem;
+    padding: 0.313rem 0.725rem;
     background: #72777D;
     color: #fff;
     border-radius: 5px;
